@@ -1,38 +1,67 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.flex-center-col {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: column;
+}
+.wh-100 {
+  width: 100px;
+  height: 100px;
+}
+.card-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  margin: 70px;
 }
 
-.App-link {
-  color: #61dafb;
+.card-container .card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px;
+  cursor: pointer;
+}
+.card-container .card:hover {
+    transform: scale(1.1);
+    transition: all .1s ease-in-out;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.card-container .pokemon {
+  text-decoration: none;
+  color: #000;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.detail-content {
+  padding: 30px;
+}
+
+
+.detail-content .progress-bar-title {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  display: inline-block;
+}
+
+progress[value] {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+progress[value]::-webkit-progress-bar {
+  height: 10px;
+  border-radius: 20px;
+  background-color: #eee;
+}  
+
+progress[value]::-webkit-progress-value {
+  height: 10px;
+  border-radius: 20px;
+  background-color: #a6f04a;
+}
+
+.progress-content {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
 }
