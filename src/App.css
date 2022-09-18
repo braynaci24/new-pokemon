@@ -8,6 +8,9 @@
   width: 100px;
   height: 100px;
 }
+.d-block {
+  display: block;
+}
 .card-container {
   display: grid;
   grid-template-columns: auto auto auto auto;
@@ -36,7 +39,10 @@
   padding: 30px;
 }
 
-
+.s {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+}
 .detail-content .progress-bar-title {
   font-size: 30px;
   font-weight: 600;
@@ -63,5 +69,10 @@ progress[value]::-webkit-progress-value {
 
 .progress-content {
   display: grid;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: auto auto auto auto auto;
+}
+
+.move-container {
+  height: 300px;
+  overflow: scroll;
 }
